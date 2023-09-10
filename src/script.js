@@ -24,10 +24,12 @@ function getProductElement(product) {
 
 
     const divNewProduct = document.createElement('div');
+    // divNewProduct.classList.add("w-72",)
+
 
     const divUsed = document.createElement("div");
     divNewProduct.appendChild(divUsed);
-    divUsed.classList.add("w-72", "h-72", "border-2", "border-black", "rounded")
+    divUsed.classList.add("w-64", "h-72", "border-2", "border-black", "rounded")
 
 
     const imgProduct = document.createElement("img");
@@ -77,7 +79,7 @@ function getProductElement(product) {
 
     const buttonAddToCard = document.createElement("button");
     divNewProduct.appendChild(buttonAddToCard);
-    buttonAddToCard.classList.add("bg-black", "text-white", "w-72", "h-10", "rounded", "font-sans", "text-sm", "mb-10")
+    buttonAddToCard.classList.add("bg-black", "text-white", "h-10", "rounded", "font-sans", "text-sm", "mb-10")
     buttonAddToCard.innerText = "ADD TO CARD";
 
     return divNewProduct;
